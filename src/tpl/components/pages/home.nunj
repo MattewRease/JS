@@ -1,0 +1,22 @@
+<div class="home">
+    <div class="container">
+        <h1 class="home__topic">
+            Home Page
+        </h1>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <h2>Discription</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Aliquam erat volutpat. Aenean id metus id velit ullamcorper pulvinar. Aliquam erat volutpat. In convallis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Etiam dictum tincidunt diam.</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h2>Discription</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Aliquam erat volutpat. Aenean id metus id velit ullamcorper pulvinar. Aliquam erat volutpat. In convallis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Etiam dictum tincidunt diam.</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h2>Discription</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Aliquam erat volutpat. Aenean id metus id velit ullamcorper pulvinar. Aliquam erat volutpat. In convallis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Etiam dictum tincidunt diam.</p>
+            </div>
+        </div>
+        {% include 'components/accordeon.nunj' %}
+    </div>
+</div>

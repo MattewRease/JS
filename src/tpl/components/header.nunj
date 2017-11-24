@@ -1,0 +1,22 @@
+{% import 'helpers/svg.nunj' as svg %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 header">
+            <nav class="header__navbar">
+                <a class="" href="#">{{ svg.svg('marker') }}</a>
+                <ul class="header_navbar-list">
+                    <li class="header__nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="nav-link" href="../">Product</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

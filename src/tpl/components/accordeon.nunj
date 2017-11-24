@@ -1,0 +1,14 @@
+<div class"container">
+    <div class="row">
+        <div class="ooops">
+            <button class="accordion"><b>Section 1</b></button>
+            <div class="panel"><p>wqdqwdewqdwqdwq</p></div>
+
+            <button class="accordion"><b>Section 2</b></button>
+            <div class="panel"><p>werewrwerwer</p></div>
+
+            <button class="accordion"><b>Section 3</b></button>
+            <div class="panel"><p>rtyrtrhgtrtrtrrt</p></div>
+        </div>
+    </div>
+</div>
