@@ -3,6 +3,9 @@
         <h1 class="home__topic">
             Practice
         </h1>
-        <div id="reverse__output"></div>
+        <div id="reverse"></div>
+
+        <div id="objects"></div>
+
     </div>
 </div>

@@ -13,13 +13,15 @@ import suffix from './components/suffix';
 import Timer from './components/Timer';
 import PlusOne from './components/plus-one/PlusOne';
 import reverse from './components/reverse';
+import objects from './components/objects';
 
 const app = (config) => {
     init(cookieLaw, document.getElementById('cookie-law'));
     init(suffix, document.querySelector('.js-suffix'));
+    render(suffix, document.getElementById('objects'));
+    render(suffix, document.getElementsById('reverse'));
 
     const store = configureStore(config);
-    init(suffix, document.getElementsByClassName('reverse'));
     render(Timer, document.getElementById('timer'), { from: 100 });
     renderFactory(PlusOne, document.querySelectorAll('.plus-one'), {}, store);
 };
