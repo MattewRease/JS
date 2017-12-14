@@ -7,5 +7,21 @@
 
         <div id="objects"></div>
 
+        <div id="array"></div>
+
     </div>
 </div>
+
+
+<div  id="objects" class="accordion">
+    <div class="accordion__item">
+        <h4 class="accordion__title">Title 1</h4>
+        <div class="accordion__text">text 1</div>
+    </div>
+</div>
+
+<button id="addBtn">add el</button>
+<button id="remBtn">rem el</button>
+<button id="class">chg cls</button>
+<div class="newelements"></div>
+

@@ -1,0 +1,40 @@
+.accordion {
+    padding: 20px;
+    margin-bottom: 30px;
+
+    &__title {
+        padding: 5px 0;
+        background-color: #eee;
+    }
+
+    &__text {
+        position: absolute;
+        display: none;
+        padding-left: 15px;
+        color: white;
+        background-color: black;
+    }
+}
+
+.active {
+    display: block;
+}
+
+.newel {
+    padding: 10px;
+    margin: 5px 0;
+    color: white;
+    background-color: black;
+}
+
+.newclass {
+    background-color: rgb(98, 110, 173);
+    color: rgb(252, 220, 80);
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.newelements {
+    width: 300px;
+    margin: 10px 0;
+}
