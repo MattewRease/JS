@@ -1,5 +1,6 @@
-const suffix = (container) => {
-    container.innerText += '_js';
-};
+// const suffix = (container) => {
+//     container.innerText += '_js';
+// };
 
-export default suffix;
+// export default suffix;
+//
