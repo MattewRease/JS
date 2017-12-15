@@ -1,7 +1,7 @@
 <div class="home">
     <div class="container">
         <h1 class="home__topic">
-            Practice
+            Homepage
         </h1>
         <div id="reverse"></div>
 
@@ -20,8 +20,10 @@
     </div>
 </div>
 
-<button id="addBtn">add el</button>
-<button id="remBtn">rem el</button>
-<button id="class">chg cls</button>
+<button id="addBtn" class="btn">Add element</button>
+<button id="remBtn" class="btn">Remove alement</button>
+<button id="remAll" class="btn">Remove all elements</button>
+<button id="class" class="btn">Change class</button>
+<button id="attr" class="btn">Add atribute</button>
 <div class="newelements"></div>
 
