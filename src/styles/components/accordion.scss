@@ -38,3 +38,26 @@
     width: 300px;
     margin: 10px 0;
 }
+
+.item {
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+
+    &:hover,
+    &:active {
+        background-color: black;
+        color: white;
+        box-shadow: none;
+        transition: .6s;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}

@@ -32,26 +32,50 @@ document.getElementById('array').innerHTML = arr;
 const item = document.querySelector('.accordion__text');
 let i;
 
+// --- toggle ---
+
 document.querySelector('.accordion__title').addEventListener('click', () => {
     document.querySelector('.accordion__text').classList.toggle('active');
 }
 );
 
+// --- add element --- //
+
 document.getElementById('addBtn').addEventListener('click', () => {
     const newElem = document.createElement('DIV');
-    newElem.className = 'newel';
-    newElem.innerHTML = 'New element has been created!';
+    newElem.innerHTML = 'New element!';
     document.querySelector('.newelements').appendChild(newElem);
 });
+
+//  --- remove element ---
 
 document.getElementById('remBtn').addEventListener('click', () => {
     const remElem = document.querySelector('.newelements');
     remElem.removeChild(remElem.childNodes[0]);
 });
 
+//  --- change elements class ---
+
 document.getElementById('class').addEventListener('click', () => {
     const changeClass = document.querySelector('.newelements').childNodes;
+    console.log(changeClass);
     for (let i = 0; i < changeClass.length; i += 1) {
         changeClass[i].className = 'newclass';
+    }
+});
+
+//  --- delete all elements ---
+
+document.getElementById('remAll').addEventListener('click', () => {
+    const remElem = document.querySelector('.newelements');
+    while (remElem.firstChild) {
+        remElem.removeChild(remElem.firstChild);
+    }
+});
+
+document.getElementById('attr').addEventListener('click', () => {
+    const setAttr = document.querySelector('.newelements').childNodes;
+    for (let i = 0; i < setAttr.length; i += 1) {
+        setAttr[i].setAttribute('type', 'button');
     }
 });
