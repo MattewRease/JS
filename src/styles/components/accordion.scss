@@ -45,6 +45,8 @@
 }
 
 .btn {
+    min-width: 200px;
+    margin: 5px 5px 5px 0;
     padding: 10px;
     background-color: #fff;
     border: 1px solid black;
@@ -52,12 +54,16 @@
     &:hover,
     &:active {
         background-color: black;
-        color: white;
+        color: white !important;
         box-shadow: none;
-        transition: .6s;
+        transition: .3s;
     }
 
     &:focus {
         box-shadow: none;
     }
+}
+
+#inputarea {
+    width: 200px;
 }

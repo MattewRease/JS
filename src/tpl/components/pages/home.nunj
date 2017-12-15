@@ -20,10 +20,27 @@
     </div>
 </div>
 
-<button id="addBtn" class="btn">Add element</button>
-<button id="remBtn" class="btn">Remove alement</button>
-<button id="remAll" class="btn">Remove all elements</button>
-<button id="class" class="btn">Change class</button>
-<button id="attr" class="btn">Add atribute</button>
-<div class="newelements"></div>
-
+<div class="container">
+<div class="row">
+    <div class="buttons col-6">
+        <div>
+            <button id="addBtn" class="btn"><span>Add element</span></button>
+            <button id="remBtn" class="btn">Remove alement</button>
+            <button id="remAll" class="btn text-wrap">Remove all elements</button>
+            <button id="class" class="btn">Change class</button>
+            <button id="attr" class="btn">Add atribute</button>
+            <div class="newelements"></div>
+        </div>
+    </div>
+    <div class="creating col-6">
+        <div>
+            <button id="create" class="btn">Create list item</button>
+            <div>
+                <input type="text" id="inputarea"></input>
+            </div>
+            <ul class="list">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
