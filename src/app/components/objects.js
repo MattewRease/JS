@@ -79,3 +79,14 @@ document.getElementById('attr').addEventListener('click', () => {
         setAttr[i].setAttribute('type', 'button');
     }
 });
+
+// --- created list ---
+document.getElementById('create').addEventListener('click', addItem);
+
+function addItem() {
+    const myList = document.querySelector('.list');
+    const inputField = document.getElementById('inputarea').value;
+    const newLi = document.createElement('li');
+    newLi.appendChild(document.createTextNode(inputField));
+    myList.appendChild(newLi);
+}
