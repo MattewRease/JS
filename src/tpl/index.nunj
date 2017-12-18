@@ -2,7 +2,6 @@
 
 {% set title = "Gulpie" %}
 
-    {% include '../../src/tpl/drum.nunj' %}
 {% block content %}
     {% include 'components/pages/home.nunj' %}
 {% endblock %}

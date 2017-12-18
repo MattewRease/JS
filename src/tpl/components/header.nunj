@@ -7,10 +7,10 @@
                 <a class="" href="#">{{ svg.svg('marker') }}</a>
                 <ul class="header_navbar-list">
                     <li class="header__nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="../">Home</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="nav-link" href="../">Product</a>
+                        <a class="nav-link" href="drum.html">Drums</a>
                     </li>
                     <li class="header__nav-item">
                         <a class="nav-link" href="#">Contacts</a>
