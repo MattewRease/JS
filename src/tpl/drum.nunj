@@ -1,0 +1,104 @@
+{% extends "layouts/default.nunj" %}
+{% block content %}
+
+{%
+    set items = [
+        {
+            dataKey: '65',
+            key: 'A',
+            title: 'boom'
+        },
+        {
+            dataKey: '83',
+            key: 'S',
+            title: 'clap'
+        },
+        {
+            dataKey: '68',
+            key: 'D',
+            title: 'hihat'
+        },
+        {
+            dataKey: '70',
+            key: 'F',
+            title: 'kick'
+        },
+        {
+            dataKey: '71',
+            key: 'G',
+            title: 'openhat'
+        },
+        {
+            dataKey: '72',
+            key: 'H',
+            title: 'ride'
+        },
+        {
+            dataKey: '74',
+            key: 'J',
+            title: 'snare'
+        },
+        {
+            dataKey: '75',
+            key: 'K',
+            title: 'tink'
+        }
+    ]
+%}
+
+{%
+    set sounds = [
+        {
+            dataKey: '65',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/boom.wav'
+        },
+        {
+            dataKey: '83',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/clap.wav'
+        },
+        {
+            dataKey: '68',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/hihat.wav'
+        },
+        {
+            dataKey: '70',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/kick.wav'
+        },
+        {
+            dataKey: '71',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/openhat.wav'
+        },
+        {
+            dataKey: '72',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/ride.wav'
+        },
+        {
+            dataKey: '74',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/snare.wav'
+        },
+        {
+            dataKey: '75',
+            src: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/tink.wav'
+        }
+    ]
+%}
+
+    <div class="row">
+        <div class="drums">
+        <h1 class="drums__title">PRESS THE BUTTON TO MAKE A SOUND!</h1>
+        <div class="drums__inner">
+                {% for item in items %}
+                <div class="drums__item item" data-key="{{ item.dataKey }}" >
+                    <kbd>{{ item.key }}</kbd>
+                    <span class="sound">{{ item.title }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% for sound in sounds %}
+        <audio data-key="{{ sound.dataKey }}" src="{{ sound.src }}"></audio>
+    {% endfor %}
+
+{% endblock %}
