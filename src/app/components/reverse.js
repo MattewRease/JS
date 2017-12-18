@@ -3,4 +3,3 @@ function reverse (n) {
     return n.split('').reverse().join(''); // split strin obj into array and separate them. reverse array. join put together array obj into string
 }
 
-document.getElementById('reverse').innerHTML = (reverse('reverse'));

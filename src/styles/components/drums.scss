@@ -1,0 +1,32 @@
+.drums {
+    @include size(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap column;
+
+    &__item {
+        min-width: 100px;
+        padding: 15px 10px;
+        margin: 10px;
+        border: 1px solid black;
+        transition: .07s;
+    }
+
+    .play {
+        transform: scale(1.2);
+        box-shadow: 0 0 5px 1px rgba(21, 26, 99, .555);
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    &__inner {
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
