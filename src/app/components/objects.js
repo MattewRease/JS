@@ -8,7 +8,7 @@ const user = {
     }
 };
 
-document.getElementById('objects').innerHTML = (user.fullName());
+// document.getElementById('objects').innerHTML = (user.fullName());
 
 
 const arr = [1, 2, 3, 4, 5, 6, 'string', {}];
@@ -27,7 +27,7 @@ arr.reverse(); // reverse array
 
 arr.slice(1, 2); // clice arrya ande created new
 
-document.getElementById('array').innerHTML = arr;
+// document.getElementById('array').innerHTML = arr;
 
 const item = document.querySelector('.accordion__text');
 let i;
@@ -58,7 +58,6 @@ document.getElementById('remBtn').addEventListener('click', () => {
 
 document.getElementById('class').addEventListener('click', () => {
     const changeClass = document.querySelector('.newelements').childNodes;
-    console.log(changeClass);
     for (let i = 0; i < changeClass.length; i += 1) {
         changeClass[i].className = 'newclass';
     }
@@ -73,6 +72,8 @@ document.getElementById('remAll').addEventListener('click', () => {
     }
 });
 
+// --- add attribute ---
+
 document.getElementById('attr').addEventListener('click', () => {
     const setAttr = document.querySelector('.newelements').childNodes;
     for (let i = 0; i < setAttr.length; i += 1) {
@@ -80,13 +81,30 @@ document.getElementById('attr').addEventListener('click', () => {
     }
 });
 
-// --- created list ---
+// --- create list item ---
 document.getElementById('create').addEventListener('click', addItem);
 
 function addItem() {
     const myList = document.querySelector('.list');
-    const inputField = document.getElementById('inputarea').value;
+    const inputField = document.getElementById('inputareaAdd').value;
     const newLi = document.createElement('li');
-    newLi.appendChild(document.createTextNode(inputField));
-    myList.appendChild(newLi);
+    if (inputField === '') {
+        alert('Write item name!');
+    } else {
+        newLi.setAttribute('id', inputField);
+        newLi.className = 'list__item';
+        newLi.appendChild(document.createTextNode(inputField));
+        myList.appendChild(newLi);
+    }
+}
+
+// --- delete item by name
+
+document.getElementById('delete').addEventListener('click', delItem);
+
+function delItem() {
+    const myList = document.querySelector('.list');
+    const inputField = document.getElementById('inputareaDel').value;
+    const item = document.getElementById(inputField);
+    myList.removeChild(item);
 }

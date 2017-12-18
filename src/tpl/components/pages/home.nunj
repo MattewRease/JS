@@ -16,7 +16,9 @@
 <div  id="objects" class="accordion">
     <div class="accordion__item">
         <h4 class="accordion__title">Title 1</h4>
-        <div class="accordion__text">text 1</div>
+        <div class="accordion__text">
+            <a href="drum.html">Drums</a>
+        </div>
     </div>
 </div>
 
@@ -32,15 +34,23 @@
             <div class="newelements"></div>
         </div>
     </div>
-    <div class="creating col-6">
-        <div>
+    <div class="creating col-6 d-inline-block">
+    <div class="row">
+        <div class="col-6">
             <button id="create" class="btn">Create list item</button>
             <div>
-                <input type="text" id="inputarea"></input>
+                <input type="text" id="inputareaAdd" placeholder="write item name to add"></input>
             </div>
-            <ul class="list">
-            </ul>
+            <ol class="list">
+            </ol>
         </div>
+        <div class="col-6">
+            <button id="delete" class="btn">Delete from list</button>
+            <div>
+                <input type="text" id="inputareaDel" placeholder="write item name to delete"></input>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
 </div>

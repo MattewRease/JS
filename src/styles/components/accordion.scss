@@ -10,9 +10,14 @@
     &__text {
         position: absolute;
         display: none;
-        padding-left: 15px;
+        padding: 10px 15px;
         color: white;
         background-color: black;
+
+        &:hover,
+        &:active, {
+            color: white;
+        }
     }
 }
 
@@ -50,6 +55,7 @@
     padding: 10px;
     background-color: #fff;
     border: 1px solid black;
+    cursor: pointer;
 
     &:hover,
     &:active {
@@ -64,6 +70,19 @@
     }
 }
 
-#inputarea {
+#inputareaAdd,
+#inputareaDel {
     width: 200px;
+    padding: 5px;
+}
+
+.list {
+    padding-left: 0;
+
+    &__item {
+        background-color: #eee;
+        padding: 5px;
+        margin: 5px 0;
+        box-shadow: 4px 4px 1px -3px rgba(10, 10, 71, .342);
+    }
 }
