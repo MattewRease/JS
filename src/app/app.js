@@ -8,13 +8,13 @@ import init from './init';
 import { render, renderFactory } from './render';
 import configureStore from './store/configureStore';
 // import reverse from './components/reverse';
-// import objects from './components/objects';
-import drums from './components/drums';
+import objects from './components/objects';
+// import drums from './components/drums';
 
 const app = (config) => {
-    // render(document.getElementById('objects'));
+    init(document.getElementById('objects'));
     // render(document.getElementById('reverse'));
-    render(document.querySelector('.drums'));
+    // render(document.querySelector('.drums'));
 
     const store = configureStore(config);
 };

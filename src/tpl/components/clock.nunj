@@ -1,0 +1,13 @@
+{% extends "layouts/default.nunj" %}
+{% block content %}
+
+<div class="clock">
+    <div class="clock__face">
+        <div class="clock__arrow clock__arrow--hour"></div>
+        <div class="clock__arrow clock__arrow--min"></div>
+        <div class="clock__arrow clock__arrow--sec"></div>
+    </div>
+</div>
+
+
+{% endblock %}

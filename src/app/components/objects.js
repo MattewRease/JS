@@ -1,36 +1,35 @@
-const user = {
-    firstName: 'Jack',
-    lastName: 'Rassel',
-    age: '45',
-    gender: 'male',
-    fullName: () => {
-        return `${user.firstName} ${user.lastName}`;
-    }
-};
+// const user = {
+//     firstName: 'Jack',
+//     lastName: 'Rassel',
+//     age: '45',
+//     gender: 'male',
+//     fullName: () => {
+//         return `${user.firstName} ${user.lastName}`;
+//     }
+// };
 
-// document.getElementById('objects').innerHTML = (user.fullName());
+// // document.getElementById('objects').innerHTML = (user.fullName());
 
 
-const arr = [1, 2, 3, 4, 5, 6, 'string', {}];
+// const arr = [1, 2, 3, 4, 5, 6, 'string', {}];
 
-arr.splice(1, 2); // delete element from array 1-start from first el 2-two el has been deleted
+// arr.splice(1, 2); // delete element from array 1-start from first el 2-two el has been deleted
 
-arr.push('newElem'); // add el at the end of array
+// arr.push('newElem'); // add el at the end of array
 
-arr.pop(); // delete last el in array
+// arr.pop(); // delete last el in array
 
-arr.shift(); // delete first el in array
+// arr.shift(); // delete first el in array
 
-arr.unshift('new at start'); // add el to begin
+// arr.unshift('new at start'); // add el to begin
 
-arr.reverse(); // reverse array
+// arr.reverse(); // reverse array
 
-arr.slice(1, 2); // clice arrya ande created new
+// arr.slice(1, 2); // clice arrya ande created new
 
-// document.getElementById('array').innerHTML = arr;
 
-const item = document.querySelector('.accordion__text');
-let i;
+// const item = document.querySelector('.accordion__text');
+// let i;
 
 // --- toggle ---
 
@@ -108,3 +107,27 @@ function delItem() {
     const item = document.getElementById(inputField);
     myList.removeChild(item);
 }
+
+// ------ clock --------
+
+const secArrow = document.querySelector('.clock__arrow--sec');
+const minArrow = document.querySelector('.clock__arrow--min');
+const hourArrow = document.querySelector('.clock__arrow--hour');
+
+function setDate() {
+    const now = new Date();
+
+    const sec = now.getSeconds();
+    const secDeg = ((sec / 60) * 360) + 90;
+    secArrow.style.transform = `rotate(${secDeg}deg)`;
+
+    const min = now.getMinutes();
+    const minDeg = ((min / 60) * 360) + ((sec / 60) * 6) + 90;
+    minArrow.style.transform = `rotate(${minDeg}deg)`;
+
+    const hour = now.getHours();
+    const hourDeg = ((hour / 12) * 360) + ((min / 60) * 30) + 90;
+    hourArrow.style.transform = `rotate(${hourDeg}deg)`;
+}
+
+setInterval(setDate, 1000);
