@@ -10,11 +10,13 @@ import configureStore from './store/configureStore';
 import objects from './components/objects';
 import drums from './components/drums';
 import clock from './components/clock';
+import array from './components/array';
 
 const app = (config) => {
     init(document.getElementById('objects'));
     init(document.querySelector('.drums'));
     init(document.querySelector('.clock'));
+    init(document.querySelector('.array'));
 
     const store = configureStore(config);
 };
