@@ -19,6 +19,8 @@
     }
 
     &__title {
+        z-index: 1000;
+        color: black;
         margin: 20px 0;
         font-weight: bold;
     }
