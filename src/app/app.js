@@ -7,14 +7,14 @@ import 'svgxuse';
 import init from './init';
 import { render, renderFactory } from './render';
 import configureStore from './store/configureStore';
-// import reverse from './components/reverse';
 import objects from './components/objects';
-// import drums from './components/drums';
+import drums from './components/drums';
+import clock from './components/clock';
 
 const app = (config) => {
     init(document.getElementById('objects'));
-    // render(document.getElementById('reverse'));
-    // render(document.querySelector('.drums'));
+    init(document.querySelector('.drums'));
+    init(document.querySelector('.clock'));
 
     const store = configureStore(config);
 };
