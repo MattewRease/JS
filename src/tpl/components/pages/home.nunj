@@ -14,7 +14,7 @@
 
 <div class="clock">
     <div class="clock__face">
-        <div class="clock__arrow clock__arrow--hour"></div>
+        <div class="clock__arrow clock__arrow--hour "></div>
         <div class="clock__arrow clock__arrow--min"></div>
         <div class="clock__arrow clock__arrow--sec"></div>
     </div>
@@ -46,7 +46,7 @@
         <div class="col-6">
             <button id="create" class="btn">Create list item</button>
             <div>
-                <input type="text" id="inputareaAdd" placeholder="write item name to add"></input>
+                <input type="text" id="inputareaAdd" placeholder="add item"></input>
             </div>
             <ol class="list">
             </ol>
@@ -54,7 +54,7 @@
         <div class="col-6">
             <button id="delete" class="btn">Delete from list</button>
             <div>
-                <input type="text" id="inputareaDel" placeholder="write item name to delete"></input>
+                <input type="text" id="inputareaDel" placeholder="delete item"></input>
             </div>
         </div>
     </div>
