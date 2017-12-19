@@ -1,0 +1,55 @@
+{% extends "layouts/default.nunj" %}
+{% block content %}
+
+
+{%
+    set items = [
+        {
+        class: 'panel--1',
+        title: 'Lets',
+        top: 'Hey',
+        bottom: 'Boom'
+        },
+        {
+        class: 'panel--2',
+        title: 'Take',
+        top: 'Hey',
+        bottom: 'Lorem'
+        },
+        {
+        class: 'panel--3',
+        title: 'It',
+        top: 'Ipsum',
+        bottom: 'All'
+        },
+        {
+        class: 'panel--4',
+        title: 'All',
+        top: 'Take',
+        bottom: 'Drive'
+        },
+        {
+        class: 'panel--5',
+        title: 'In',
+        top: 'Hey',
+        bottom: 'Life'
+        }
+    ]
+%}
+
+<div class="row">
+    <div class="col-12">
+        <div class="panels">
+            {% for item in items %}
+
+                <div class="panels__item {{ item.class }}">
+                    <p class="panels__content panels__content--top">{{ item.top }}</p>
+                    <p class="panels__content panels__content--title">{{ item.title }}</p>
+                    <p class="panels__content panels__content--bottom">{{ item.bottom }}</p>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

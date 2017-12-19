@@ -1,0 +1,85 @@
+.panels {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .72), 0 0 14px rgba(0, 0, 0, .45);
+        text-transform: uppercase;
+        flex: 1 0 auto;
+        width: 100%;
+        margin: 0;
+        font-size: 3em;
+        transition: transform (.5s);
+
+        &--top,
+        &--bottom {
+            font-size: 1.5em;
+        }
+
+        &--top {
+            transform: translateY(-100%);
+        }
+
+        &--bottom {
+            transform: translateY(100%);
+        }
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        font-size: 20px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .1);
+        transition:
+            font-size .7s cubic-bezier(.61, - .19, .7, -.11),
+            flex .7s cubic-bezier(.61, -.19, .7, -.11),
+            background .2s;
+
+        &--open {
+            flex: 4;
+            font-size: 40px;
+        }
+    }
+
+    .panel--1 {
+        background-image: url(http://satyr.io/1500x1500/1);
+    }
+
+    .panel--2 {
+        background-image: url(http://satyr.io/1500x1500/2);
+    }
+
+    .panel--3 {
+        background-image: url(http://satyr.io/1500x1500/3);
+    }
+
+    .panel--4 {
+        background-image: url(http://satyr.io/1500x1500/4);
+    }
+
+    .panel--5 {
+        background-image: url(http://satyr.io/1500x1500/5);
+    }
+}
+
+
+.active > .panels__content--top {
+    transform: translateY(0);
+}
+
+.active > .panels__content--bottom {
+    transform: translateY(0);
+}
