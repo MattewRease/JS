@@ -11,12 +11,14 @@ import objects from './components/objects';
 import drums from './components/drums';
 import clock from './components/clock';
 import array from './components/array';
+import gallery from './components/gallery';
 
 const app = (config) => {
     init(document.getElementById('objects'));
     init(document.querySelector('.drums'));
     init(document.querySelector('.clock'));
     init(document.querySelector('.array'));
+    init(document.querySelector('.panels'));
 
     const store = configureStore(config);
 };
