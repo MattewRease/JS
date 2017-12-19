@@ -1,6 +1,6 @@
 {% extends "layouts/default.nunj" %}
 
-{% set title = "Gulpie" %}
+{% set title = "js practice" %}
 
 {% block content %}
     {% include 'components/pages/home.nunj' %}
