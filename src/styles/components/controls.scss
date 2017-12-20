@@ -1,0 +1,29 @@
+:root {
+    --base: #8b4040;
+    --spacing: 20px;
+    --blur: 5px;
+    --weight: bold;
+    --mainfont: 14px;
+}
+
+.controls {
+
+    &__title {
+        font-weight: var(--weight);
+
+        &--span {
+            color: var(--base);
+        }
+    }
+
+    &__image {
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-size: var(--mainfont);
+    }
+}
