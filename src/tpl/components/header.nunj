@@ -15,6 +15,9 @@
                     <li class="header__nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
+                    <li class="header__nav-item">
+                        <a class="nav-link" href="controls.html">Controls</a>
+                    </li>
                 </ul>
             </nav>
         </div>
