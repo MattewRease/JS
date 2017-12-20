@@ -1,6 +1,6 @@
 .panels {
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 150px);
     overflow: hidden;
     font-family: 'Amatic SC', cursive;
     color: white;
